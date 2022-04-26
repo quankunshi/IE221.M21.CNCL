@@ -291,11 +291,11 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
+    hbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        xpos 0.2
+        yalign 0.98
 
         spacing gui.navigation_spacing
 
@@ -321,7 +321,7 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("Giới thiệu") action ShowMenu("about")
+        textbutton _("about") action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -372,9 +372,6 @@ screen main_menu():
         vbox:
             style "main_menu_vbox"
 
-            text "[config.name!t]":
-                style "main_menu_title"
-
             text "[config.version]":
                 style "main_menu_version"
 
@@ -388,8 +385,6 @@ style main_menu_version is main_menu_text
 style main_menu_frame:
     xsize 234
     yfill True
-
-    background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -532,7 +527,7 @@ style game_menu_label_text:
 
 style return_button:
     xpos gui.navigation_xpos
-    yalign 1.0
+    yalign 0.5
     yoffset -24
 
 
@@ -550,7 +545,7 @@ screen about():
     ## This use statement includes the game_menu screen inside this one. The
     ## vbox child is then included inside the viewport inside the game_menu
     ## screen.
-    use game_menu(_("Giới thiệu"), scroll="viewport"):
+    use game_menu(_("about"), scroll="viewport"):
 
         style_prefix "about"
 
@@ -654,7 +649,7 @@ screen file_slots(title):
                 style_prefix "page"
 
                 xalign 0.5
-                yalign 1.0
+                yalign 0.9
 
                 spacing gui.page_spacing
 
