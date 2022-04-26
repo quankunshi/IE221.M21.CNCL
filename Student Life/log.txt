@@ -143,3 +143,24 @@ Version: '4.6.0 NVIDIA 388.73'
 Display Info: None
 Screen sizes: virtual=(1066, 600) physical=(1333, 750) drawable=(1333, 750)
 Maximum texture size: 4096x4096
+<<<<<<< Updated upstream
+=======
+
+Full traceback:
+  File "renpy/bootstrap.py", line 331, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 665, in main
+    renpy.persistent.update(True)
+  File "renpy/persistent.py", line 395, in update
+    save()
+  File "renpy/persistent.py", line 411, in save
+    renpy.loadsave.location.save_persistent(data)
+  File "renpy/savelocation.py", line 496, in save_persistent
+    l.save_persistent(data)
+  File "renpy/savelocation.py", line 347, in save_persistent
+    with open(fn_tmp, "wb") as f:
+IOError: [Errno 2] No such file or directory: u'D:\\IE221.M21.CNCL\\Student Life/game\\saves\\persistent.1650944182.tmp'
+
+While running game code:
+IOError: [Errno 2] No such file or directory: u'D:\\IE221.M21.CNCL\\Student Life/game\\saves\\persistent.1650944182.tmp'
+>>>>>>> Stashed changes
