@@ -2,10 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/Sys.rpy", line 103: expected an indented block
-        return str(self.Sessions[self.Session]) + u" ngày thứ "+ str(self.Day)
-              ^
-    
+The label start is defined twice, at File "game/script.rpy", line 7:
+label start:
+and File "game/script.rpy", line 13:
+label start:
+
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Tue May  3 16:44:38 2022
+Tue May  3 17:18:36 2022

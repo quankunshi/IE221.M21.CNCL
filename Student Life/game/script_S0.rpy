@@ -1,6 +1,6 @@
 label Chap0:
     #Gặp lại người thân
-    show home   
+    show home
     show mama happy
     Mama.c "Chào mừng trở về con trai, ta cứ ngỡ mất con sau vụ tai nạn đó chứ"
     "...."

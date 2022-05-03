@@ -1,26 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-IOError: [Errno 2] No such file or directory: u'D:\\IE221.M21.CNCL\\Student Life/game\\saves\\persistent.1650944182.tmp'
+  File "game/script.rpy", line 12, in script call
+    call Chap0
+  File "game/script_S0.rpy", line 17, in script
+    jump name_choose1
+ScriptError: could not find label 'name_choose1'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/bootstrap.py", line 331, in bootstrap
-    renpy.main.main()
-  File "renpy/main.py", line 665, in main
-    renpy.persistent.update(True)
-  File "renpy/persistent.py", line 395, in update
-    save()
-  File "renpy/persistent.py", line 411, in save
-    renpy.loadsave.location.save_persistent(data)
-  File "renpy/savelocation.py", line 496, in save_persistent
-    l.save_persistent(data)
-  File "renpy/savelocation.py", line 347, in save_persistent
-    with open(fn_tmp, "wb") as f:
-IOError: [Errno 2] No such file or directory: u'D:\\IE221.M21.CNCL\\Student Life/game\\saves\\persistent.1650944182.tmp'
+  File "game/script.rpy", line 12, in script call
+    call Chap0
+  File "game/script_S0.rpy", line 17, in script
+    jump name_choose1
+  File "renpy/ast.py", line 1757, in execute
+    rv = renpy.game.script.lookup(target)
+  File "renpy/script.py", line 918, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'name_choose1'.
 
-Windows-10-10.0.22000
+Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 Student Life 1.0
-Tue Apr 26 10:47:20 2022
+Tue May  3 17:22:42 2022
