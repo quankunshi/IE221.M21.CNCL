@@ -25,3 +25,23 @@ label Chap0:
     Mama.c "Vào nhà thôi!"
     hide mama happy
     return
+
+
+    label name_choose1:
+        Player.c "Tất nhiên rồi... "
+        Player.c "(Bỏ mẹ rồi tên mình là gì !!!)"
+        "???" "(Hãy nghĩ ra cái tên đi nhóc, còn lại để ta sắp xếp!)"
+        $ player_name=renpy.input("Họ và Tên:" )
+        $ Player.name = player_name
+        Player.c " Tất nhiên rồi con là [Player.name]"
+        jump chap0_continue
+
+    label name_choose2:
+        Player.c "Con không rõ lắm... "
+        Player.c "(Tên mình là gì !!!)"
+        "???" "(Haizz chết tiệt..., thằng nhóc này đến cả tên mà không nhớ)"
+        "???" "(Người tên là Long, Nguyễn Thanh Long. Đó là cả cái tên của người)"
+        $ player_name="Nguyễn Thanh Long"
+        $ Player.name = player_name
+        Player.c " Tất nhiên rồi con là [Player.name]"
+        jump chap0_continue
