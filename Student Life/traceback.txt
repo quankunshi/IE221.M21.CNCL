@@ -1,32 +1,33 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 189, in script
-    python:
-  File "renpy/common/00start.rpy", line 190, in <module>
-    renpy.execute_default_statement(True)
-  File "game/script.rpy", line 6, in set_default
-    default location = 0
-Exception: store.location is being given a default a second time.
+  File "game/script.rpy", line 11, in script call
+    call Chap0
+  File "game/script_S0.rpy", line 32, in script call
+    call locnha
+ScriptError: could not find label 'loctruong hoc'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 189, in script
-    python:
-  File "renpy/ast.py", line 928, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2245, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00start.rpy", line 190, in <module>
-    renpy.execute_default_statement(True)
-  File "renpy/exports.py", line 3753, in execute_default_statement
-    i.set_default(start)
-  File "game/script.rpy", line 6, in set_default
-    default location = 0
-Exception: store.location is being given a default a second time.
+  File "renpy/bootstrap.py", line 331, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 662, in main
+    run(restart)
+  File "renpy/main.py", line 148, in run
+    renpy.execution.run_context(True)
+  File "renpy/execution.py", line 922, in run_context
+    context.run()
+  File "game/script.rpy", line 11, in script call
+    call Chap0
+  File "game/script_S0.rpy", line 32, in script call
+    call locnha
+  File "game/script_s/locnha/truocnha/truocnha.rpyc", line 9, in script
+  File "renpy/script.py", line 918, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'loctruong hoc'.
 
-Windows-10-10.0.19041
+Windows-10-10.0.22000
 Ren'Py 7.4.11.2266
 Student Life 1.0
-Tue May  3 17:37:29 2022
+Wed May 11 18:01:28 2022

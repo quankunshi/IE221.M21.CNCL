@@ -1,6 +1,9 @@
 label Chap0:
     #Gặp lại người thân
     show home
+    show car_move
+    pause 2.5
+    hide car_move
     show mama happy
     Mama.c "Chào mừng trở về con trai, ta cứ ngỡ mất con sau vụ tai nạn đó chứ"
     "...."
@@ -22,8 +25,11 @@ label Chap0:
     hide mama question
     show mama happy
     Mama.c "Đúng là con rồi!!"
+    $ Mama.point_CC(1)
     Mama.c "Vào nhà thôi!"
     hide mama happy
+    hide mama happy
+    call locnha
     return
 
 

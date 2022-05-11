@@ -1,11 +1,16 @@
 #----------------------------------Create Map-----------------------------------
 default calendar = Calendar(0,["buổi sáng", "buổi trưa", "buổi tối"],1)
 init python:
-    Places = [0,1,2]
-    Places[0] = Place(200,250,"Nhà",True)
-    Places[1] = Place(280,150,"Trường Học",True)
-    Places[2] = Place(190,230,"Ánh Dương House",True)
+    Map_loc = [0,1,2]
+    Map_loc[0] = Place(200,250,"Nhà",True)
+    Map_loc[1] = Place(280,150,"Trường Học",True)
+    Map_loc[2] = Place(190,230,"Ánh Dương House",True)
 
+
+    Events = [0]*3
+    Events[0] = Event("locnha",0,1,True)
+    Events[1] = Event("loctruonghoc",1,1,True)
+    Events[2] = Event("loctruonghoc",0,2,False)
 
 
 

@@ -21,5 +21,5 @@ init python:
 
     def stringhandling(str_values):
         """xử lý tên tiếng việt thành không dấu và bỏ khoảng cách"""
-        str_values = no_accent_vietnamese(str_values).replace(" "," ").lower()
+        str_values = no_accent_vietnamese(str_values).replace(" ","").lower()
         return str_values
