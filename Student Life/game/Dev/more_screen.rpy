@@ -26,10 +26,6 @@ screen Updatelaterscreen:
             action Rollback()
 
 
-
-
-
-
 screen MapScreen:
     frame:
         xsize 700
@@ -51,14 +47,22 @@ screen MapScreen:
             action Rollback()
 
 
+screen TuidoScreen:
+    frame:
+        xsize 700
+        ysize 500
+        xalign 0.1
+        yalign 0.4
+        background "tuido_screen"
 
 screen menu_top:
     image "timebaner"
     text"[calendar.output]":
-         xalign 0.09
-         yalign 0.035
-         color "#000000"
-         size 15
+        xalign 0.09
+        yalign 0.035
+        color "#000000"
+        size 15
     hbox xalign 1.0 yalign 0:
         imagebutton idle "mapicon" action ShowTransient('MapScreen')
+        imagebutton idle "tuiicon" action ShowTransient('TuidoScreen')
         imagebutton idle "phone" action ShowTransient('Phonescreen')

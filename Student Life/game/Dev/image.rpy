@@ -4,7 +4,7 @@ image side Player icon = "avatarplayer"
 
 image mama hi:
     "mama"
-    size(150,300)
+    size(150, 300)
 
 image mama happy:
     "mamahappy"
@@ -15,88 +15,88 @@ image mama question:
 
 image ngocthu dung:
     "ngocthudung"
-    size(70,200)
+    size(70, 200)
 
 image vanson dung:
     "vanson"
-    size(200,400)
+    size(200, 400)
 #-----------------Nhà------------------#
 image home_screen:
     "home"
-    size(1066,600)
+    size(1066, 600)
 
 image home_midday_screen:
     "home_midday"
-    size(1066,600)
+    size(1066, 600)
 
 image home_lastday_screen:
     "home_lastday"
-    size(1066,600)
+    size(1066, 600)
 
 #-----------------Trường Học------------------#
 """trường học"""
 image school_screen:
     "school"
-    size(1066,600)
+    size(1066, 600)
 
 #-----------------Nhà của ánh dương------------------#
 image anhduonghouse_screen:
     "anhduonghouse"
-    size(1066,600)
+    size(1066, 600)
 
 image anhduonghouse_midday_screen:
     "anhduonghouse_midday"
-    size(1066,600)
+    size(1066, 600)
 
 image anhduonghouse_lastday_screen:
     "anhduonghouse_lastday"
-    size(1066,600)
+    size(1066, 600)
 #----------------------banner/screen/icon---------------------#
 image phone screen:
     "phonescreen"
-    size(250,500)
+    size(250, 500)
 
 image appnote:
     "note"
-    size(50,50)
+    size(50, 50)
 
 image appcamera:
     "camera"
-    size(50,50)
+    size(50, 50)
 
 image apptele:
-     "tele"
-     size(50,50)
+    "tele"
+    size(50, 50)
 
 image appmail:
     "mail"
-    size(50,50)
+    size(50, 50)
 
 image appimage:
     "image"
-    size(50,50)
+    size(50, 50)
 
 image timplus:
     "tim"
-    size(30,30)
+    size(30, 30)
 
 image timdown:
     "timdown"
-    size(30,30)
+    size(30, 30)
 
 image timebaner:
     "time"
-    size(300,60)
+    size(300, 60)
 
 image map_screen:
     "map"
-    size(700,500)
+    size(700, 500)
 image updatelaterscreen:
     "updatelater"
-    size(500,250)
+    size(500, 250)
 image backbutton:
     "back"
-    size(70,40)
+    size(70, 40)
 #---------------------gif--------------------------#
 image car_move:
 
@@ -130,3 +130,7 @@ image car_move:
     pause 0.1
     "carmoveon15"
     pause 0.1
+#-------------subject---------------------#
+image tuido_screen:
+    "tuido"
+    size(700, 500)
