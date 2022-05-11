@@ -57,7 +57,7 @@ screen TuidoScreen:
         imagebutton idle "backbutton":
             xalign 0.5
             yalign 0.98
-            action Rollback()
+            action Hide("TuidoScreen")
 
 screen menu_top:
     image "timebaner"

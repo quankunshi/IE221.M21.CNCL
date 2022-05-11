@@ -1,18 +1,20 @@
 #----------------------------------Create Map-----------------------------------
 default calendar = Calendar(0,["buổi sáng", "buổi trưa", "buổi tối"],1)
 init python:
-    Map_loc = [0]*3
+    #Bản đồ
+    Map_loc = [0]*3 # thay đổi theo sự mở rộng của game
     Map_loc[0] = Place(200,250,"Nhà",True)
     Map_loc[1] = Place(280,150,"Trường Học",True)
     Map_loc[2] = Place(190,200,"Ánh Dương House",True)
 
-
-    Events = [0]*3
+    #Sự kiện
+    Events = [0]*3 # thay đổi theo sự mở rộng của game
     Events[0] = Event("locnha",0,1,True)
     Events[1] = Event("loctruonghoc",1,1,True)
     Events[2] = Event("loctruonghoc",0,2,False)
 
-    AppPhone = [0]*5
+    #Ứng dụng điện thoại
+    AppPhone = [0]*5 # thay đổi theo sự mở rộng của game
     AppPhone[0] = Place(10, 70,"appcamera",True)
     AppPhone[1] = Place(90, 70,"appmail",True)
     AppPhone[2] = Place(180, 70,"apptele",True)
@@ -221,7 +223,7 @@ define NV_NhuQuynh = Person(
                             "Lao Công"
                             )
 #---------Character-------------
-define Daion = Character("Daion",image = "vatchu.gif")
+define Daion = Character("Daion")
 define Mama = Person(
                     Character("Mama"),
                     "Mama",
