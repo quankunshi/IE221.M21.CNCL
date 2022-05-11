@@ -54,6 +54,10 @@ screen TuidoScreen:
         xalign 0.1
         yalign 0.4
         background "tuido_screen"
+        imagebutton idle "backbutton":
+            xalign 0.5
+            yalign 0.98
+            action Rollback()
 
 screen menu_top:
     image "timebaner"
@@ -64,5 +68,5 @@ screen menu_top:
         size 15
     hbox xalign 1.0 yalign 0:
         imagebutton idle "mapicon" action ShowTransient('MapScreen')
-        imagebutton idle "tuiicon" action ShowTransient('TuidoScreen')
+        imagebutton idle "icontuido" action ShowTransient('TuidoScreen')
         imagebutton idle "phone" action ShowTransient('Phonescreen')
