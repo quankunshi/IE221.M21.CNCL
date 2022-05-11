@@ -52,6 +52,30 @@ image anhduonghouse_lastday_screen:
     "anhduonghouse_lastday"
     size(1066,600)
 #----------------------banner/screen/icon---------------------#
+image phone screen:
+    "phonescreen"
+    size(250,500)
+
+image appnote:
+    "note"
+    size(50,50)
+
+image appcamera:
+    "camera"
+    size(50,50)
+
+image apptele:
+     "tele"
+     size(50,50)
+
+image appmail:
+    "mail"
+    size(50,50)
+
+image appimage:
+    "image"
+    size(50,50)
+
 image timplus:
     "tim"
     size(30,30)
@@ -67,6 +91,12 @@ image timebaner:
 image map_screen:
     "map"
     size(700,500)
+image updatelaterscreen:
+    "updatelater"
+    size(500,250)
+image backbutton:
+    "back"
+    size(70,40)
 #---------------------gif--------------------------#
 image car_move:
 

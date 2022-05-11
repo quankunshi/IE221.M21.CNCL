@@ -1,16 +1,23 @@
 #----------------------------------Create Map-----------------------------------
 default calendar = Calendar(0,["buổi sáng", "buổi trưa", "buổi tối"],1)
 init python:
-    Map_loc = [0,1,2]
+    Map_loc = [0]*3
     Map_loc[0] = Place(200,250,"Nhà",True)
     Map_loc[1] = Place(280,150,"Trường Học",True)
-    Map_loc[2] = Place(190,230,"Ánh Dương House",True)
+    Map_loc[2] = Place(190,200,"Ánh Dương House",True)
 
 
     Events = [0]*3
     Events[0] = Event("locnha",0,1,True)
     Events[1] = Event("loctruonghoc",1,1,True)
     Events[2] = Event("loctruonghoc",0,2,False)
+
+    AppPhone = [0]*5
+    AppPhone[0] = Place(10, 70,"appcamera",True)
+    AppPhone[1] = Place(90, 70,"appmail",True)
+    AppPhone[2] = Place(180, 70,"apptele",True)
+    AppPhone[3] = Place(10, 130,"appimage",True)
+    AppPhone[4] = Place(90,130,"appnote",True)
 
 
 

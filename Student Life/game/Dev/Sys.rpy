@@ -68,7 +68,7 @@ init python:
             else:
                 prestige = "giảm"
                 img = "timdown"
-            renpy.notify("Uy tín "+ prestige + " " + str(abs(pointup)))
+            renpy.notify("hảo cảm "+ prestige + " " + str(abs(pointup)))
             renpy.show(img,[heart_pos(0.01,0.15)])
             renpy.pause(2.5)
             renpy.hide(img)
