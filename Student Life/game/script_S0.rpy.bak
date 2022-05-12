@@ -29,7 +29,7 @@ label Chap0:
     Mama.c "Vào nhà thôi!"
     hide mama happy
     hide mama happy
-    call locnha from _call_locnha
+    call locnha
     return
 
 
