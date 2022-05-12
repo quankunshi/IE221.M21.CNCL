@@ -4,6 +4,7 @@ init python:
     def no_accent_vietnamese(s):
         """
         unidecode xóa kí tự tiếng Việt
+        https://nguyenvanhieu.vn/code-xoa-dau-tieng-viet/
         =======================================================================
         input(s): no_accent_vietnamese("Nguyễn Minh Quân 19522082 Đỗ Tài 19522149")
         output: Nguyen Minh Quan 19522082 Do Tai 19522149
