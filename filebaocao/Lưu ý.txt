@@ -1,0 +1,27 @@
+Sử dụng Ren'py launcher trong folder fileCaidat để chạy game. Hoặc down từ: https://www.renpy.org/latest.html
+Nếu như xảy ra vấn đề trong việc load game, vui lòng liên hệ: 19522082@gm.uit.edu.vn
+
+- Chỉnh sửa đường dẫn game : Perferences(dưới góc phải) => Projects Directory(Trên góc trái). Lưu ý, chỉ dẫn đến mục chứa game.
+Ví dụ:
+ >> D:\Github\IE221.M21.CNCL\Student Life\game <Sai>
+ >> D:\Github\IE221.M21.CNCL <Đúng>
+- Các folder trong đồ án.
+lưu ý file có .rpyc do Ren'py launcher xuất ra sau khi load file .rpy
+  Dev: chứa các file khởi tạo.
+	+ Sys.rpy: chứa các class nhân vật và các chức năng.
+	+ more_screen.rpy: xây dựng các hình ảnh nổi cho game.
+	+ image: gởi tạo và chỉnh sửa ảnh.
+	+ define_values.rpy: định nghĩa và khởi tạo các giá trị: nhân vật, vị trí,...
+	+ def.rpy: chứa các hàm liên quan để phục vụ xây dựng chức năng.
+  images: chứa hình ảnh.
+	+ Character: hình ảnh nhân vật.
+	+ icon: icon trong game.
+	+ screen: các hình ảnh screen.
+  script_s: Các cốt chuyện phân nhánh.
+	...
+  scriptXXX: XXX ở đây là các file tương tự.
+	+ là các file cốt chuyện chính.
+- Chỉnh sửa folder đồ họa UI.
+sửa 1 vài chỗ như hình ảnh, các phím chức năng không đáng nói...
+
+      
